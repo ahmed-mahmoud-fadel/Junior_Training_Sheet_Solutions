@@ -35,7 +35,7 @@ const unLike = async () => {
 
         try {
             onClick_unlikeBtn();
-            await delay(1500);
+            await delay(200);
         } catch (error) {
             await delay(1000);
             onClick_unlikeBtn();
