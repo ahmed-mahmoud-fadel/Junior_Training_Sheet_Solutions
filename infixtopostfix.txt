@@ -1,0 +1,13 @@
+1) Recive expression in string
+2) create function for convert infixt to postfix (string)
+    1) iterate on string char by char.
+        2) check if current char is operand by isOperand function
+            if yes add to posfix string
+        3) check if current char is operator by isOperator function
+            if yes loop while stacl not empty, top of stack not equal '(' and , current operator has higher precedence of top of stack by hasHigerPrecedence function
+                while true take form stack to postfix string.
+                then push new operator.
+        4) if current char is '(' push it in stak
+        5) if current char is ')' 
+            if yes take all char form stack to string until '('.
+    2) finally take remaining char on the stack to string.
